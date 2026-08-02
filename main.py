@@ -32,7 +32,6 @@ while True:
     if opcion == "1":
         producto = input("Nombre del producto: ")
         cantidad = input("Cantidad disponible: ")
-
 precio = float(input("Precio del producto: "))
 
         nuevo_producto = {
