@@ -65,20 +65,18 @@ while True:
     elif opcion == "3":
         nombre = input("ingrese el nombre del producto a eliminar:")
 
- 
-         encontrado = False
+        encontrado = False
 
-         for producto in inventario:
-if producto["nombre"].lower() == nombre.lower():
-        inventario.remove(producto)
-        guardar_inventario(inventario)
-        print("Producto eliminado                  
-        correctamente.)     
-       encontrado = True
-       break
+    for producto in inventario:
+        if producto["nombre"].lower() == nombre.lower():              
+           inventario.remove(producto)
+           guardar_inventario(inventario)
+           print("Producto eliminado correctamente.)                
+           encontrado = True
+           break
 
          if not encontrado:
-         print("No se encontró ese             
+             print("No se encontró ese             
          producto.")
 
 
