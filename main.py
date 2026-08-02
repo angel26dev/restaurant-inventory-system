@@ -54,13 +54,13 @@ precio = float(input("Precio del producto: "))
         else:
             for producto in inventario:
                 print(
-                    "Producto:",
-                    producto["nombre"],
-                    "| Cantidad:",
-                    producto["cantidad"],
-                   "|Precio: $",
-                     producto["precio"]
-                )
+    "Producto:",
+    producto["nombre"],
+    "| Cantidad:",
+    producto["cantidad"],
+    "| Precio: $",
+    producto["precio"]
+)
 
     elif opcion == "3":
         print("Cerrando sistema...")
