@@ -1,6 +1,24 @@
+import json
+
+ARCHIVO = "inventario.json"
+
+
+def cargar_inventario():
+    try:
+        with open(ARCHIVO, "r") as archivo:
+            return json.load(archivo)
+    except:
+        return []
+
+
+def guardar_inventario(inventario):
+    with open(ARCHIVO, "w") as archivo:
+        json.dump(inventario, archivo, indent=4)
+
+
 print("=== Sistema de Inventario para Restaurantes ===")
 
-inventario = []
+inventario = cargar_inventario()
 
 while True:
     print("\n--- MENÚ PRINCIPAL ---")
@@ -14,12 +32,16 @@ while True:
         producto = input("Nombre del producto: ")
         cantidad = input("Cantidad disponible: ")
 
-        inventario.append({
+        nuevo_producto = {
             "nombre": producto,
             "cantidad": cantidad
-        })
+        }
 
-        print("Producto agregado correctamente.")
+        inventario.append(nuevo_producto)
+
+        guardar_inventario(inventario)
+
+        print("Producto guardado correctamente.")
 
     elif opcion == "2":
         print("\n--- INVENTARIO ACTUAL ---")
