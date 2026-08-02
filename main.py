@@ -58,7 +58,7 @@ precio = float(input("Precio del producto: "))
                     producto["nombre"],
                     "| Cantidad:",
                     producto["cantidad"],
-                    "|Precio: $",
+                   "|Precio: $",
                      producto["precio"]
                 )
 
