@@ -70,11 +70,17 @@ while True:
         for producto in inventario:
             if producto["nombre"].lower() == nombre.lower():
 
-                print("Producto encontrado:")
-                print("Nombre:", producto["nombre"])
-                print("Cantidad:", producto["cantidad"])
-                print("Precio: $", producto["precio"])
-                print("Producto encontrado.")
+                print(
+                   "\n===PRODUCTO
+                     ENCONTRADO===)    
+                print("Nombre:",
+                   producto["nombre"]) 
+                print("Cantidad:", 
+                   producto["cantidad"])
+               print("Precio: $"
+                  producto["precio"])
+                     
+
                 encontrado = True
                 break
 
