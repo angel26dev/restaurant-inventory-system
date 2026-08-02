@@ -63,22 +63,21 @@ while True:
                    producto["precio"]
 )
     elif opcion == "3":
-         nombre = input("Ingrese el nombre del producto a buscar: ")
+        nombre = input("Ingrese el nombre del producto a buscar: ")
 
         encontrado = False 
 
         for producto in inventario:
             if producto["nombre"].lower() == nombre.lower():
 
-                print(
-                   "\n===PRODUCTO
-                     ENCONTRADO===)    
+                print("\n===PRODUCTO ENCONTRADO===)    
                 print("Nombre:",
                    producto["nombre"]) 
                 print("Cantidad:", 
                    producto["cantidad"])
-               print("Precio: $"
-                  producto["precio"])
+               print("Precio: $",
+                  producto["precio"])                   
+               print("==========================")
                      
                 encontrado = True
                 break
