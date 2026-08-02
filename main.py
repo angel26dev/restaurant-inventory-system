@@ -24,8 +24,9 @@ while True:
     print("\n--- MENÚ PRINCIPAL ---")
     print("1. Agregar producto")
     print("2. Ver inventario")
-    print("3. Eliminar producto")
-    print("4. Salir")
+    print("3. Buscar producto")
+    print("4. Eliminar producto")
+    print("5. Salir")
 
     opcion = input("Seleccione una opción: ")
 
@@ -61,8 +62,25 @@ while True:
                    "| Precio: $",
                    producto["precio"]
 )
-
     elif opcion == "3":
+        nombre = input("Ingrese el nombre del producto a buscar: ")
+
+        encontrado = False 
+
+        for producto in inventario:
+            if producto["nombre"].lower() == nombre.lower():
+
+inventario.search(producto)
+
+guardar_inventario(inventario)
+                print("Producto conseguido correctamente.")
+                encontrado = True
+                break
+
+        if not encontrado: 
+            print("No se encontró ese producto.")
+
+    elif opcion == "4":
         nombre = input("Ingrese el nombre del producto a eliminar: ")
 
         encontrado = False
@@ -79,7 +97,7 @@ while True:
             print("No se encontró ese producto.")
 
 
-    elif opcion == "4":
+    elif opcion == "5":
         print("Cerrando sistema...")
         break
 
