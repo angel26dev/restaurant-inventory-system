@@ -68,7 +68,7 @@ precio = float(input("Precio del producto: "))
  
     encontrado = False
 
-    for producto on inventario:
+    for producto in inventario:
         if producto["nombre"].lower() ==
 nombre.lower():
         inventario.remove(producto)
