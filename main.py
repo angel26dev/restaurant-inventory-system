@@ -54,12 +54,12 @@ while True:
         else:
             for producto in inventario:
                 print(
-    "Producto:",
-    producto["nombre"],
-    "| Cantidad:",
-    producto["cantidad"],
-    "| Precio: $",
-    producto["precio"]
+                   "Producto:",
+                   producto["nombre"],
+                   "| Cantidad:",
+                   producto["cantidad"],
+                   "| Precio: $",
+                   producto["precio"]
 )
 
     elif opcion == "3":
