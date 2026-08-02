@@ -63,17 +63,18 @@ while True:
                    producto["precio"]
 )
     elif opcion == "3":
-        nombre = input("Ingrese el nombre del producto a buscar: ")
+         nombre = input("Ingrese el nombre del producto a buscar: ")
 
         encontrado = False 
 
         for producto in inventario:
             if producto["nombre"].lower() == nombre.lower():
 
-inventario.search(producto)
-
-guardar_inventario(inventario)
-                print("Producto conseguido correctamente.")
+                print("Producto encontrado:")
+                print("Nombre:", producto["nombre"])
+                print("Cantidad:", producto["cantidad"])
+                print("Precio: $", producto["precio"])
+                print("Producto encontrado.")
                 encontrado = True
                 break
 
