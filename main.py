@@ -32,9 +32,12 @@ while True:
         producto = input("Nombre del producto: ")
         cantidad = input("Cantidad disponible: ")
 
+precio = float(input("Precio del producto: "))
+
         nuevo_producto = {
             "nombre": producto,
-            "cantidad": cantidad
+            "cantidad": cantidad,
+            "precio": precio
         }
 
         inventario.append(nuevo_producto)
@@ -54,7 +57,9 @@ while True:
                     "Producto:",
                     producto["nombre"],
                     "| Cantidad:",
-                    producto["cantidad"]
+                    producto["cantidad"],
+                    "|Precio: $",
+                     producto["precio"]
                 )
 
     elif opcion == "3":
