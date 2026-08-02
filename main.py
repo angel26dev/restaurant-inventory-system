@@ -24,7 +24,8 @@ while True:
     print("\n--- MENÚ PRINCIPAL ---")
     print("1. Agregar producto")
     print("2. Ver inventario")
-    print("3. Salir")
+    print("3. Eliminar producto")
+    print("4. Salir")
 
     opcion = input("Seleccione una opción: ")
 
