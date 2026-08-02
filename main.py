@@ -68,16 +68,16 @@ while True:
         encontrado = False
 
         for producto in inventario:
-        if producto["nombre"].lower() == nombre.lower():              
+            if producto["nombre"].lower() == nombre.lower():              
            inventario.remove(producto)
            guardar_inventario(inventario)
-           print("Producto eliminado correctamente.")                
+           print("Producto eliminado 
+           correctamente.")               
            encontrado = True
            break
 
         if not encontrado:
-             print("No se encontró ese             
-         producto.")
+              print("No se encontró ese producto.")
 
 
     elif opcion == "4":
