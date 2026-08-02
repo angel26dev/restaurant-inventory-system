@@ -62,7 +62,7 @@ while True:
                    producto["precio"]
 )
 
-        elif opcion == "3":
+    elif opcion == "3":
         nombre = input("Ingrese el nombre del producto a eliminar: ")
 
         encontrado = False
